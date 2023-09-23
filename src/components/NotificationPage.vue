@@ -3,6 +3,12 @@ export default {
     name: 'NotificationPage',
     data() {
         return {
+            notificationBody: {
+                name: '',
+                action: 'join',
+                message: ''
+            },
+            isModalOpen: false,
             notifs: [
                 {
                     name: 'Jacob Thompson',

@@ -20,7 +20,7 @@ jobs:
       name: Build & push Docker image
       with:
         image: alysialfi/notification-page
-        tags: v1, latest
+        tags: latest
         registry: docker.io
         dockerfile: docker/DockerFile
         username: ${{ secrets.DOCKER_USERNAME }}

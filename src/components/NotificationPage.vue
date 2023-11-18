@@ -1,8 +1,10 @@
 <script>
+    // const username = document.getElementById('name').value
 export default {
     name: 'NotificationPage',
     data() {
         return {
+            categories: [],
             notificationBody: {
                 name: '',
                 action: 'join',
@@ -33,6 +35,7 @@ export default {
                     hasRead: false
                 }
             ],
+            jewelryData: null
         }
     },
     methods: {
@@ -49,7 +52,20 @@ export default {
             for (const body in this.notificationBody) {
                 this.notificationBody[body] = ''
             }
-        }
+        },
+        // async callCategoryAPI() {
+        //     // fetch('https://fakestoreapi.com/products/categories')
+        //     // .then((response) => response.json())
+        //     // .then((result) => console.log(result))
+
+        //     const api = await fetch('https://fakestoreapi.com/products/categories')
+        //     const categories = await api.json()
+        //     this.categories = categories
+        //     console.log(categories);
+        // }
+    },
+    mounted() {
+        // this.callCategoryAPI()
     },
 }
 </script>
@@ -65,6 +81,9 @@ export default {
                 </div>
                 <span class="text-sm text-gray-500">Mark all as read</span>
             </div>
+            <!-- <div v-for="(category, index) in categories" :key="index">
+                {{ category }}
+            </div> -->
 
             <!-- content -->
             <div v-for="(notif, index) in notifs" :key="index" class="p-4 bg-slate-100 rounded-md mb-4">

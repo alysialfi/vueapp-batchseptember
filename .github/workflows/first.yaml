@@ -8,6 +8,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Print Hello World
-        run: echo "Hello Friends"
+        run: echo "Hello World"
 
 

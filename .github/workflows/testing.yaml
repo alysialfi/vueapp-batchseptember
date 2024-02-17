@@ -1,8 +1,7 @@
-name: Testing Workflow (Batch January)
+name: Testing Workflow (Batch February)
 
 on:
   push:
-  Workflow_dispatch:
 
 jobs:
   tests:

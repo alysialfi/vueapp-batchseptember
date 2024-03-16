@@ -1,4 +1,4 @@
-name: My First Workflow Github actions/checkout
+name: My First Workflow Github actions/checkout batch Maret
 
 on:
   push:

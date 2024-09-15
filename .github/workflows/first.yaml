@@ -1,4 +1,4 @@
-name: My First Workflow Github actions/checkout batch April
+name: My First Workflow Github actions/checkout batch September
 
 on:
   push:
@@ -9,5 +9,4 @@ jobs:
     steps:
       - name: Print Hello World
         run: echo "Hello World"
-
 
